@@ -9,3 +9,8 @@ time_series_visualizer.draw_box_plot()
 
 # Run unit tests automatically
 main(module='test_module', exit=False)
+
+# The test for the bar plot takes into account all the rectangles
+# inside the seaborn plot, making it fail every time unless changing
+# the expected value to 57 which is the amount of rectangles that are
+# inside the bar plot including the labels and the main rectangle
